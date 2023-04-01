@@ -358,6 +358,9 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer-container {
+  display: flex;
+}
 .footer-link {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -393,7 +396,6 @@ body {
   max-width: 264px;
 }
 .footer-box {
-  display: inline-block;
   margin-right: 120px;
 }
 .footer-wrap {
@@ -449,11 +451,22 @@ body {
   gap: 48px 24px;
   margin-top: 72px;
 }
-.gallery-list:hover {
+.gallery-link {
+  display: block;
+}
+.gallery-link:hover,
+.gallery-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .gallery-item {
+}
+.gallery-item:hover,
+.gallery-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .gallery-card {
   padding: 32px 0 32px 16px;
