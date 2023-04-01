@@ -2,6 +2,7 @@
   --main-background-color: #ffffff;
   --second-color: #4d5ae5;
   --logo-color: #2e2f42;
+  --bg-color-icons: #f4f4fd;
 }
 
 p,
@@ -42,6 +43,16 @@ body {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .container {
@@ -133,6 +144,8 @@ body {
 /* -------------------HERO------------------- */
 
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -187,13 +200,26 @@ body {
 /* -------------------FEATURES------------------- */
 .features {
 }
+.features-list-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  background-color: var(--bg-color-icons);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.features-icon {
+}
 .features-list {
   display: flex;
   gap: 24px;
 }
 
 .features-item {
+  max-width: 264px;
 }
+
 .features-title {
   font-weight: 500;
   font-size: 20px;
@@ -213,16 +239,7 @@ body {
 .works {
   padding-top: 0;
 }
-.works-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
+
 .works-list {
   background-color: #ffffff;
   display: flex;
@@ -258,20 +275,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
+}
 
 .team-soc-icon {
   fill: #f4f4fd;
 }
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
+
 .team-list {
   display: flex;
   gap: 24px;
@@ -279,6 +291,9 @@ body {
 .team-item {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-names {
   font-weight: 500;
@@ -296,6 +311,45 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   margin-bottom: 8px;
+}
+
+/* -------------------CUSTOMERS------------------- */
+.customers {
+}
+.customers-wrap {
+}
+
+.customers-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #8e8f99;
+  border-radius: 4px;
+  color: #8e8f99;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.cutomers-icon {
+  fill: currentColor;
 }
 
 /* -------------------FOOTER------------------- */
@@ -338,6 +392,47 @@ body {
   color: #f4f4fd;
   max-width: 264px;
 }
+.footer-box {
+  display: inline-block;
+  margin-right: 120px;
+}
+.footer-wrap {
+  display: inline-block;
+}
+.footer-social {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
+}
+.footer-icon {
+  fill: #f4f4fd;
+}
 
 /* -------------------PORTFOLIO PAGE------------------- */
 .gallery {
@@ -354,6 +449,10 @@ body {
   gap: 48px 24px;
   margin-top: 72px;
 }
+.gallery-list:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .gallery-item {
 }
 .gallery-card {
@@ -362,6 +461,7 @@ body {
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
 }
+
 .gallery-btn {
   font-family: inherit;
   font-style: normal;
